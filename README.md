@@ -14,8 +14,8 @@ $ npm start
 or
 $ heroku local web
 
-# NOTE: Your app should now be running on [http://localhost:5000](http://localhost:5000/)
 ```
+**NOTE**: Your app should now be running on [http://localhost:5000](http://localhost:5000/)
 
 Deploying to Heroku
 -------------------
@@ -26,9 +26,7 @@ $ git push heroku master
 $ heroku open
 ```
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-#### NOTES
+#### Extras
 For more information about using Node.js on Heroku, see these Dev Center articles:
 
 - [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
