@@ -6,7 +6,7 @@
     {
         "node": "5.9.1"
     },
-    "main": "index.js",
+    "main": "main.js",
     "scripts":
     {
         "start": "node main.js"
