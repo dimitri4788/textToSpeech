@@ -4,7 +4,7 @@
     "description": "An application to convert text to speech.",
     "engines":
     {
-        "node": "5.9.1"
+        "node": "4.6.0"
     },
     "main": "main.js",
     "scripts":
@@ -14,7 +14,8 @@
     "dependencies":
     {
         "ejs": "2.4.1",
-        "express": "4.13.3"
+        "express": "4.13.3",
+        "serve-favicon": "2.3.0"
     },
     "repository":
     {
@@ -27,7 +28,8 @@
         "express.js",
         "text",
         "speech",
-        "javascript"
+        "javascript",
+        "ejs"
     ],
     "license": "MIT"
 }
