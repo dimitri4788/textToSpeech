@@ -17,17 +17,12 @@ app.use(favicon(__dirname + '/static/images/favicon.ico'));
 app.set('views', __dirname + '/templates');
 app.set('view engine', 'ejs');
 
+//Route HTTP GET requests to a callback function and render index page
 app.get('/', function(request, response) {
     response.render('index');
-    //response.send(request.hostname);
-});
-app.get('/about', function(request, response) {
-    response.render('test');
 });
 
+//Bind and listen for connections on the specified host and port
 app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
+    console.log('Node.js and Express.js app is running on port', app.get('port'));
 });
-
-//TODO: Include normalize.css in my project: http://nicolasgallagher.com/about-normalize-css/
-//TODO look at popular CSS libraries nowadays
