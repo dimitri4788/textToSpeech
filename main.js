@@ -1,5 +1,5 @@
 //Some useful definitions
-port = 5000
+portNumber = 5000
 
 //Create an Express application object and load serve-favicon module
 var express = require('express');
@@ -7,7 +7,10 @@ var favicon = require('serve-favicon');
 var app = express();
 
 //Set the port value
-app.set('port', port);
+//  Heroku dynamically assigns your app a port, so you can't set the port to a fixed number
+//  Heroku adds the port to the env, so you can pull it from there, that way it will
+//  still listen to port 5000 when you test locally, but it will also work on Heroku
+app.set('port', (process.env.PORT || portNumber));
 
 //Serve static content for the app from the "static" directory in the application directory
 app.use(express.static(__dirname + '/static'));
