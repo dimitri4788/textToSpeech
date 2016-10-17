@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <% include header.ejs %>
+    </head>
+
+    <body>
+        <% include navigationBar.ejs %>
+
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h1>TEXT TO SPEECH</h1>
+                <p>Don't want to read that long text with 666+ words, no worries. Just copy-paste your text here, sit back and relax.</p>
+
+
+                <label for="fader">Rate</label>
+                <input type="range" min="0" max="100" value="50" id="fader" faderstep="1" oninput="outputUpdate(value)">
+                <output for="fader" id="volume">50</output>
+
+                <label for="fader">Pitch</label>
+                <input type="range" min="0" max="100" value="50" id="fader" faderstep="1" oninput="outputUpdate(value)">
+                <output for="fader" id="volume">50</output>
+
+                <form oninput="weight.value =  shippingweight.valueAsNumber.toPrecision(3)">
+                    <label for="shippingweight">Shipping Weight</label>
+                    <input type="range" min="0" max="25" value="1.0" step="0.1" name="shippingweight" id="shippingweight">
+                    <output name="weight" for="shippingweight">1.0</output>kg
+                </form>
+
+
+                <textarea class="form-control" rows="12" placeholder="copy-paste your text here ..."></textarea>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text-center center-block">
+                <a href="https://github.com/deep4788"><i class="fa fa-github-square fa-3x social"></i></a>
+                <a href="https://www.linkedin.com/in/deep-aggarwal-957a3a37"><i class="fa fa-linkedin-square fa-3x social"></i></a>
+                <a href="https://twitter.com/Deep4788"><i class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="mailto:deep.uiuc@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,29 +1,25 @@
 {
     "name": "texttospeech",
     "version": "1.0.0",
-    "description": "An application to convert text to speech.",
-    "engines":
-    {
+    "description": "An application to convert text to speech in JavaScript (Node.js and Express.js)",
+    "author": "Deep Aggarwal <deep.uiuc@gmail.com>",
+    "engines": {
         "node": "4.6.0"
     },
     "main": "main.js",
-    "scripts":
-    {
+    "scripts": {
         "start": "node main.js"
     },
-    "dependencies":
-    {
+    "dependencies": {
         "ejs": "2.4.1",
         "express": "4.13.3",
         "serve-favicon": "2.3.0"
     },
-    "repository":
-    {
+    "repository": {
         "type": "git",
         "url": "https://github.com/deep4788/textToSpeech"
     },
-    "keywords":
-    [
+    "keywords": [
         "node.js",
         "express.js",
         "text",

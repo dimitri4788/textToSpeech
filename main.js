@@ -28,3 +28,6 @@ app.get('/about', function(request, response) {
 app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));
 });
+
+//TODO: Include normalize.css in my project: http://nicolasgallagher.com/about-normalize-css/
+//TODO look at popular CSS libraries nowadays
