@@ -3,6 +3,10 @@ Text-To-Speech Application
 
 An application for people who don't like/want to read a long text and would prefer the text to be read to them. Simple to use, just **copy-and-paste** the text you want to be read, press enter, and sit back and relax.
 
+Website
+------
+[Click here to use the application](https://safe-dusk-54731.herokuapp.com/)
+
 Running Locally
 ---------------
 ```sh
@@ -17,6 +21,7 @@ $ npm start
 Deploying to Heroku
 -------------------
 ```sh
+# Install Heroku CLI Toolbelt: https://toolbelt.heroku.com/
 $ heroku login
 $ heroku create
 $ git push heroku master
