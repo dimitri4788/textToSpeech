@@ -23,7 +23,7 @@ Deploying to Heroku
 ```sh
 # Install Heroku CLI Toolbelt: https://toolbelt.heroku.com/
 $ heroku login
-$ heroku create
+$ heroku apps:create [YOURAPPNAME]
 $ git push heroku master
 $ heroku open
 ```
